@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Aa-8s-vcd">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Aa-8s-vcd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,6 +11,7 @@
         <scene sceneID="wVs-zH-y5o">
             <objects>
                 <tabBarController storyboardIdentifier="LandingController" title="LandingController" id="Qc3-Kx-sMb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="erP-sD-KUm"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q4X-gD-t6d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -35,7 +33,7 @@
         <!--LaunchScreen-->
         <scene sceneID="UVP-xO-BBX">
             <objects>
-                <viewController storyboardIdentifier="LaunchScreen" title="LaunchScreen" id="5Aa-8s-vcd" customClass="LaunchViewController" customModule="YaleSpringFling" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchScreen" title="LaunchScreen" id="5Aa-8s-vcd" customClass="LaunchViewController" customModule="springFling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yUL-Uf-UW4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,7 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="CJ7-Vw-yMB"/>
                     </view>
                     <connections>
-                        <segue destination="Qc3-Kx-sMb" kind="showDetail" identifier="LaunchSegue" id="u7b-gR-70q"/>
+                        <segue destination="Qc3-Kx-sMb" kind="presentation" identifier="LaunchSegue" modalPresentationStyle="fullScreen" id="u7b-gR-70q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjk-qX-J6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
