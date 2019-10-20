@@ -3,29 +3,81 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		498E9644235CD65000450545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E9643235CD65000450545 /* AppDelegate.swift */; };
-		498E9646235CD65000450545 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E9645235CD65000450545 /* SceneDelegate.swift */; };
 		498E9648235CD65000450545 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498E9647235CD65000450545 /* ContentView.swift */; };
-		498E964A235CD65100450545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498E9649235CD65100450545 /* Assets.xcassets */; };
-		498E964D235CD65100450545 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498E964C235CD65100450545 /* Preview Assets.xcassets */; };
-		498E9650235CD65100450545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498E964E235CD65100450545 /* LaunchScreen.storyboard */; };
-		498E9658235CD6A900450545 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 498E9657235CD6A900450545 /* GoogleService-Info.plist */; };
+		49DC7D23235CDAE2008EB171 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7CFC235CDAE1008EB171 /* ContentView.swift */; };
+		49DC7D24235CDAE2008EB171 /* AnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7CFE235CDAE1008EB171 /* AnnouncementCell.swift */; };
+		49DC7D25235CDAE2008EB171 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7CFF235CDAE1008EB171 /* Announcement.swift */; };
+		49DC7D26235CDAE2008EB171 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D00235CDAE1008EB171 /* AnnouncementsViewController.swift */; };
+		49DC7D27235CDAE2008EB171 /* announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D01235CDAE1008EB171 /* announcements.storyboard */; };
+		49DC7D28235CDAE2008EB171 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D03235CDAE1008EB171 /* Assests.xcassets */; };
+		49DC7D29235CDAE2008EB171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D04235CDAE1008EB171 /* Preview Assets.xcassets */; };
+		49DC7D2B235CDAE2008EB171 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D08235CDAE2008EB171 /* LaunchViewController.swift */; };
+		49DC7D2C235CDAE2008EB171 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D0A235CDAE2008EB171 /* Resource.swift */; };
+		49DC7D2D235CDAE2008EB171 /* ResourceImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D0B235CDAE2008EB171 /* ResourceImageViewController.swift */; };
+		49DC7D2E235CDAE2008EB171 /* resources.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D0C235CDAE2008EB171 /* resources.storyboard */; };
+		49DC7D2F235CDAE2008EB171 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D0D235CDAE2008EB171 /* ResourcesViewController.swift */; };
+		49DC7D30235CDAE2008EB171 /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D0E235CDAE2008EB171 /* ResourceCell.swift */; };
+		49DC7D33235CDAE2008EB171 /* LineupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D12235CDAE2008EB171 /* LineupCell.swift */; };
+		49DC7D34235CDAE2008EB171 /* LineupSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D13235CDAE2008EB171 /* LineupSlot.swift */; };
+		49DC7D35235CDAE2008EB171 /* LineupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D14235CDAE2008EB171 /* LineupViewController.swift */; };
+		49DC7D36235CDAE2008EB171 /* lineup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D15235CDAE2008EB171 /* lineup.storyboard */; };
+		49DC7D37235CDAE2008EB171 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D16235CDAE2008EB171 /* Artist.swift */; };
+		49DC7D38235CDAE2008EB171 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D17235CDAE2008EB171 /* DetailsViewController.swift */; };
+		49DC7D3A235CDAE2008EB171 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D1A235CDAE2008EB171 /* home.storyboard */; };
+		49DC7D3B235CDAE2008EB171 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D1B235CDAE2008EB171 /* HomeViewController.swift */; };
+		49DC7D3D235CDAE2008EB171 /* Q_A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D1E235CDAE2008EB171 /* Q_A.swift */; };
+		49DC7D3E235CDAE2008EB171 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D1F235CDAE2008EB171 /* QuestionCell.swift */; };
+		49DC7D3F235CDAE2008EB171 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D20235CDAE2008EB171 /* AnswerCell.swift */; };
+		49DC7D40235CDAE2008EB171 /* faq.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D21235CDAE2008EB171 /* faq.storyboard */; };
+		49DC7D41235CDAE2008EB171 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D22235CDAE2008EB171 /* FAQViewController.swift */; };
+		49DC7D44235CDC63008EB171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D42235CDC63008EB171 /* Main.storyboard */; };
+		49DC7D45235CDC63008EB171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D43235CDC63008EB171 /* LaunchScreen.storyboard */; };
+		49DC7D47235CDCA0008EB171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D46235CDCA0008EB171 /* AppDelegate.swift */; };
+		49DC7D48235CDFE6008EB171 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D1C235CDAE2008EB171 /* GoogleService-Info.plist */; };
+		C01C3DF3C1FBB92AAFA2B6D3 /* Pods_springFling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756BBD1D0AF07A9F5627C8F7 /* Pods_springFling.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		498E9640235CD65000450545 /* springFling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = springFling.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		498E9643235CD65000450545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		498E9645235CD65000450545 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		498E9647235CD65000450545 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		498E9649235CD65100450545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		498E964C235CD65100450545 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		498E964F235CD65100450545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		498E9651235CD65100450545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		498E9657235CD6A900450545 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49DC7CFC235CDAE1008EB171 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		49DC7CFE235CDAE1008EB171 /* AnnouncementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementCell.swift; sourceTree = "<group>"; };
+		49DC7CFF235CDAE1008EB171 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
+		49DC7D00235CDAE1008EB171 /* AnnouncementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsViewController.swift; sourceTree = "<group>"; };
+		49DC7D01235CDAE1008EB171 /* announcements.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = announcements.storyboard; sourceTree = "<group>"; };
+		49DC7D03235CDAE1008EB171 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
+		49DC7D04235CDAE1008EB171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49DC7D08235CDAE2008EB171 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		49DC7D0A235CDAE2008EB171 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		49DC7D0B235CDAE2008EB171 /* ResourceImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceImageViewController.swift; sourceTree = "<group>"; };
+		49DC7D0C235CDAE2008EB171 /* resources.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = resources.storyboard; sourceTree = "<group>"; };
+		49DC7D0D235CDAE2008EB171 /* ResourcesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		49DC7D0E235CDAE2008EB171 /* ResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
+		49DC7D0F235CDAE2008EB171 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49DC7D12235CDAE2008EB171 /* LineupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineupCell.swift; sourceTree = "<group>"; };
+		49DC7D13235CDAE2008EB171 /* LineupSlot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineupSlot.swift; sourceTree = "<group>"; };
+		49DC7D14235CDAE2008EB171 /* LineupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineupViewController.swift; sourceTree = "<group>"; };
+		49DC7D15235CDAE2008EB171 /* lineup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = lineup.storyboard; sourceTree = "<group>"; };
+		49DC7D16235CDAE2008EB171 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		49DC7D17235CDAE2008EB171 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		49DC7D1A235CDAE2008EB171 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		49DC7D1B235CDAE2008EB171 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		49DC7D1C235CDAE2008EB171 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49DC7D1E235CDAE2008EB171 /* Q_A.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Q_A.swift; sourceTree = "<group>"; };
+		49DC7D1F235CDAE2008EB171 /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		49DC7D20235CDAE2008EB171 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		49DC7D21235CDAE2008EB171 /* faq.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = faq.storyboard; sourceTree = "<group>"; };
+		49DC7D22235CDAE2008EB171 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		49DC7D42235CDC63008EB171 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		49DC7D43235CDC63008EB171 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49DC7D46235CDCA0008EB171 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		756BBD1D0AF07A9F5627C8F7 /* Pods_springFling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_springFling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70889AC7EC7AFB9F96C3A65 /* Pods-springFling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-springFling.debug.xcconfig"; path = "Target Support Files/Pods-springFling/Pods-springFling.debug.xcconfig"; sourceTree = "<group>"; };
+		C5277F9A8954E5BCE526C00A /* Pods-springFling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-springFling.release.xcconfig"; path = "Target Support Files/Pods-springFling/Pods-springFling.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +85,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01C3DF3C1FBB92AAFA2B6D3 /* Pods_springFling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22EEC8B6DA2F686D3680295A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				756BBD1D0AF07A9F5627C8F7 /* Pods_springFling.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		498E9637235CD65000450545 = {
 			isa = PBXGroup;
 			children = (
 				498E9642235CD65000450545 /* springFling */,
 				498E9641235CD65000450545 /* Products */,
+				E03194F3CE15F6FFEC39EF58 /* Pods */,
+				22EEC8B6DA2F686D3680295A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,24 +121,97 @@
 		498E9642235CD65000450545 /* springFling */ = {
 			isa = PBXGroup;
 			children = (
-				498E9643235CD65000450545 /* AppDelegate.swift */,
-				498E9645235CD65000450545 /* SceneDelegate.swift */,
+				49DC7D46235CDCA0008EB171 /* AppDelegate.swift */,
+				49DC7D43235CDC63008EB171 /* LaunchScreen.storyboard */,
+				49DC7D42235CDC63008EB171 /* Main.storyboard */,
+				49DC7CFD235CDAE1008EB171 /* announcements */,
+				49DC7CFC235CDAE1008EB171 /* ContentView.swift */,
+				49DC7D1D235CDAE2008EB171 /* faq */,
+				49DC7D1C235CDAE2008EB171 /* GoogleService-Info.plist */,
+				49DC7D19235CDAE2008EB171 /* home */,
+				49DC7D0F235CDAE2008EB171 /* Info.plist */,
+				49DC7D08235CDAE2008EB171 /* LaunchViewController.swift */,
+				49DC7D11235CDAE2008EB171 /* lineup */,
+				49DC7D02235CDAE1008EB171 /* Preview Content */,
+				49DC7D09235CDAE2008EB171 /* resources */,
 				498E9647235CD65000450545 /* ContentView.swift */,
-				498E9649235CD65100450545 /* Assets.xcassets */,
-				498E964E235CD65100450545 /* LaunchScreen.storyboard */,
-				498E9651235CD65100450545 /* Info.plist */,
-				498E9657235CD6A900450545 /* GoogleService-Info.plist */,
-				498E964B235CD65100450545 /* Preview Content */,
 			);
 			path = springFling;
 			sourceTree = "<group>";
 		};
-		498E964B235CD65100450545 /* Preview Content */ = {
+		49DC7CFD235CDAE1008EB171 /* announcements */ = {
 			isa = PBXGroup;
 			children = (
-				498E964C235CD65100450545 /* Preview Assets.xcassets */,
+				49DC7CFE235CDAE1008EB171 /* AnnouncementCell.swift */,
+				49DC7CFF235CDAE1008EB171 /* Announcement.swift */,
+				49DC7D00235CDAE1008EB171 /* AnnouncementsViewController.swift */,
+				49DC7D01235CDAE1008EB171 /* announcements.storyboard */,
+			);
+			path = announcements;
+			sourceTree = "<group>";
+		};
+		49DC7D02235CDAE1008EB171 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				49DC7D03235CDAE1008EB171 /* Assests.xcassets */,
+				49DC7D04235CDAE1008EB171 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49DC7D09235CDAE2008EB171 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				49DC7D0A235CDAE2008EB171 /* Resource.swift */,
+				49DC7D0B235CDAE2008EB171 /* ResourceImageViewController.swift */,
+				49DC7D0C235CDAE2008EB171 /* resources.storyboard */,
+				49DC7D0D235CDAE2008EB171 /* ResourcesViewController.swift */,
+				49DC7D0E235CDAE2008EB171 /* ResourceCell.swift */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		49DC7D11235CDAE2008EB171 /* lineup */ = {
+			isa = PBXGroup;
+			children = (
+				49DC7D12235CDAE2008EB171 /* LineupCell.swift */,
+				49DC7D13235CDAE2008EB171 /* LineupSlot.swift */,
+				49DC7D14235CDAE2008EB171 /* LineupViewController.swift */,
+				49DC7D15235CDAE2008EB171 /* lineup.storyboard */,
+				49DC7D16235CDAE2008EB171 /* Artist.swift */,
+				49DC7D17235CDAE2008EB171 /* DetailsViewController.swift */,
+			);
+			path = lineup;
+			sourceTree = "<group>";
+		};
+		49DC7D19235CDAE2008EB171 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				49DC7D1A235CDAE2008EB171 /* home.storyboard */,
+				49DC7D1B235CDAE2008EB171 /* HomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		49DC7D1D235CDAE2008EB171 /* faq */ = {
+			isa = PBXGroup;
+			children = (
+				49DC7D1E235CDAE2008EB171 /* Q_A.swift */,
+				49DC7D1F235CDAE2008EB171 /* QuestionCell.swift */,
+				49DC7D20235CDAE2008EB171 /* AnswerCell.swift */,
+				49DC7D21235CDAE2008EB171 /* faq.storyboard */,
+				49DC7D22235CDAE2008EB171 /* FAQViewController.swift */,
+			);
+			path = faq;
+			sourceTree = "<group>";
+		};
+		E03194F3CE15F6FFEC39EF58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A70889AC7EC7AFB9F96C3A65 /* Pods-springFling.debug.xcconfig */,
+				C5277F9A8954E5BCE526C00A /* Pods-springFling.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 498E9654235CD65100450545 /* Build configuration list for PBXNativeTarget "springFling" */;
 			buildPhases = (
+				6A6BDE72EE63CAE9937A4B9D /* [CP] Check Pods Manifest.lock */,
 				498E963C235CD65000450545 /* Sources */,
 				498E963D235CD65000450545 /* Frameworks */,
 				498E963E235CD65000450545 /* Resources */,
+				4019258C7966E52FD7207013 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,38 +274,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				498E9650235CD65100450545 /* LaunchScreen.storyboard in Resources */,
-				498E9658235CD6A900450545 /* GoogleService-Info.plist in Resources */,
-				498E964D235CD65100450545 /* Preview Assets.xcassets in Resources */,
-				498E964A235CD65100450545 /* Assets.xcassets in Resources */,
+				49DC7D48235CDFE6008EB171 /* GoogleService-Info.plist in Resources */,
+				49DC7D27235CDAE2008EB171 /* announcements.storyboard in Resources */,
+				49DC7D36235CDAE2008EB171 /* lineup.storyboard in Resources */,
+				49DC7D3A235CDAE2008EB171 /* home.storyboard in Resources */,
+				49DC7D44235CDC63008EB171 /* Main.storyboard in Resources */,
+				49DC7D28235CDAE2008EB171 /* Assests.xcassets in Resources */,
+				49DC7D29235CDAE2008EB171 /* Preview Assets.xcassets in Resources */,
+				49DC7D45235CDC63008EB171 /* LaunchScreen.storyboard in Resources */,
+				49DC7D2E235CDAE2008EB171 /* resources.storyboard in Resources */,
+				49DC7D40235CDAE2008EB171 /* faq.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4019258C7966E52FD7207013 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-springFling/Pods-springFling-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-springFling/Pods-springFling-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-springFling/Pods-springFling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6BDE72EE63CAE9937A4B9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-springFling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		498E963C235CD65000450545 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				498E9644235CD65000450545 /* AppDelegate.swift in Sources */,
-				498E9646235CD65000450545 /* SceneDelegate.swift in Sources */,
+				49DC7D47235CDCA0008EB171 /* AppDelegate.swift in Sources */,
+				49DC7D2F235CDAE2008EB171 /* ResourcesViewController.swift in Sources */,
+				49DC7D30235CDAE2008EB171 /* ResourceCell.swift in Sources */,
+				49DC7D3B235CDAE2008EB171 /* HomeViewController.swift in Sources */,
+				49DC7D3F235CDAE2008EB171 /* AnswerCell.swift in Sources */,
+				49DC7D3E235CDAE2008EB171 /* QuestionCell.swift in Sources */,
+				49DC7D2C235CDAE2008EB171 /* Resource.swift in Sources */,
+				49DC7D33235CDAE2008EB171 /* LineupCell.swift in Sources */,
+				49DC7D26235CDAE2008EB171 /* AnnouncementsViewController.swift in Sources */,
+				49DC7D2D235CDAE2008EB171 /* ResourceImageViewController.swift in Sources */,
+				49DC7D25235CDAE2008EB171 /* Announcement.swift in Sources */,
+				49DC7D24235CDAE2008EB171 /* AnnouncementCell.swift in Sources */,
+				49DC7D34235CDAE2008EB171 /* LineupSlot.swift in Sources */,
+				49DC7D38235CDAE2008EB171 /* DetailsViewController.swift in Sources */,
+				49DC7D23235CDAE2008EB171 /* ContentView.swift in Sources */,
 				498E9648235CD65000450545 /* ContentView.swift in Sources */,
+				49DC7D41235CDAE2008EB171 /* FAQViewController.swift in Sources */,
+				49DC7D2B235CDAE2008EB171 /* LaunchViewController.swift in Sources */,
+				49DC7D3D235CDAE2008EB171 /* Q_A.swift in Sources */,
+				49DC7D37235CDAE2008EB171 /* Artist.swift in Sources */,
+				49DC7D35235CDAE2008EB171 /* LineupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		498E964E235CD65100450545 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				498E964F235CD65100450545 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		498E9652235CD65100450545 /* Debug */ = {
@@ -286,6 +479,7 @@
 		};
 		498E9655235CD65100450545 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A70889AC7EC7AFB9F96C3A65 /* Pods-springFling.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +500,7 @@
 		};
 		498E9656235CD65100450545 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5277F9A8954E5BCE526C00A /* Pods-springFling.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
