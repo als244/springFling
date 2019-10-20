@@ -2,8 +2,7 @@
 //  Announcement.swift
 //  YaleSpringFling
 //
-//  Created by Andrew Sheinberg on 7/12/19.
-//  Copyright © 2019 Project T. All rights reserved.
+//  Created by Andrew Sheinberg on 10/15/19.
 //
 
 import Foundation

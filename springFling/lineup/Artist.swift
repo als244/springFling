@@ -2,8 +2,7 @@
 //  Artist.swift
 //  Yale Spring Fling
 //
-//  Created by Andrew Sheinberg on 7/10/19.
-//  Copyright © 2019 Project T. All rights reserved.
+//  Created by Alexis Dornan on 10/10/19.
 //
 
 import UIKit

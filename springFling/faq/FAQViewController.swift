@@ -2,8 +2,7 @@
 //  FAQViewController.swift
 //  Yale Spring Fling
 //
-//  Created by Andrew Sheinberg on 7/9/19.
-//  Copyright © 2019 Project T. All rights reserved.
+//  Created by Andrew Sheinberg on 10/13/19.
 //
 
 import UIKit

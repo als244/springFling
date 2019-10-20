@@ -2,8 +2,7 @@
 //  ResourceImageViewController.swift
 //  YaleSpringFling
 //
-//  Created by Andrew Sheinberg on 7/10/19.
-//  Copyright © 2019 Project T. All rights reserved.
+//  Created by Andrew Sheinberg on 9/28/19.
 //
 
 import UIKit
