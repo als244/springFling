@@ -11,6 +11,8 @@
 		49A40BFA23709A6E0053BDE6 /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A40BF923709A6E0053BDE6 /* login.storyboard */; };
 		49C866A22370B6B4001F13B4 /* AdminAnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C866A12370B6B4001F13B4 /* AdminAnnouncementsViewController.swift */; };
 		49C866A42370E43B001F13B4 /* ContentAnnouncementViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C866A32370E43B001F13B4 /* ContentAnnouncementViewConroller.swift */; };
+		49C866A623734271001F13B4 /* AdminFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C866A523734271001F13B4 /* AdminFAQViewController.swift */; };
+		49C866A823734A60001F13B4 /* ContentFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C866A723734A60001F13B4 /* ContentFAQViewController.swift */; };
 		49DC7D24235CDAE2008EB171 /* AnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7CFE235CDAE1008EB171 /* AnnouncementCell.swift */; };
 		49DC7D25235CDAE2008EB171 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7CFF235CDAE1008EB171 /* Announcement.swift */; };
 		49DC7D26235CDAE2008EB171 /* AnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D00235CDAE1008EB171 /* AnnouncementsViewController.swift */; };
@@ -49,6 +51,8 @@
 		49A40BF923709A6E0053BDE6 /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
 		49C866A12370B6B4001F13B4 /* AdminAnnouncementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAnnouncementsViewController.swift; sourceTree = "<group>"; };
 		49C866A32370E43B001F13B4 /* ContentAnnouncementViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentAnnouncementViewConroller.swift; sourceTree = "<group>"; };
+		49C866A523734271001F13B4 /* AdminFAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminFAQViewController.swift; sourceTree = "<group>"; };
+		49C866A723734A60001F13B4 /* ContentFAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentFAQViewController.swift; sourceTree = "<group>"; };
 		49DC7CFC235CDAE1008EB171 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49DC7CFE235CDAE1008EB171 /* AnnouncementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementCell.swift; sourceTree = "<group>"; };
 		49DC7CFF235CDAE1008EB171 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
@@ -136,8 +140,8 @@
 				49DC7D08235CDAE2008EB171 /* LaunchViewController.swift */,
 				49DC7D42235CDC63008EB171 /* Main.storyboard */,
 				49DC7D19235CDAE2008EB171 /* home */,
-				49DC7CFD235CDAE1008EB171 /* announcements */,
 				49DC7D1D235CDAE2008EB171 /* faq */,
+				49DC7CFD235CDAE1008EB171 /* announcements */,
 				49DC7D11235CDAE2008EB171 /* lineup */,
 				49DC7D09235CDAE2008EB171 /* resources */,
 				49A40BF62370999D0053BDE6 /* admin_login */,
@@ -217,8 +221,10 @@
 				49DC7D1E235CDAE2008EB171 /* Q_A.swift */,
 				49DC7D1F235CDAE2008EB171 /* QuestionCell.swift */,
 				49DC7D20235CDAE2008EB171 /* AnswerCell.swift */,
-				49DC7D21235CDAE2008EB171 /* faq.storyboard */,
 				49DC7D22235CDAE2008EB171 /* FAQViewController.swift */,
+				49C866A523734271001F13B4 /* AdminFAQViewController.swift */,
+				49DC7D21235CDAE2008EB171 /* faq.storyboard */,
+				49C866A723734A60001F13B4 /* ContentFAQViewController.swift */,
 			);
 			path = faq;
 			sourceTree = "<group>";
@@ -366,6 +372,7 @@
 				49DC7D47235CDCA0008EB171 /* AppDelegate.swift in Sources */,
 				49DC7D2F235CDAE2008EB171 /* ResourcesViewController.swift in Sources */,
 				49C866A42370E43B001F13B4 /* ContentAnnouncementViewConroller.swift in Sources */,
+				49C866A823734A60001F13B4 /* ContentFAQViewController.swift in Sources */,
 				49DC7D30235CDAE2008EB171 /* ResourceCell.swift in Sources */,
 				49DC7D3B235CDAE2008EB171 /* HomeViewController.swift in Sources */,
 				49DC7D3F235CDAE2008EB171 /* AnswerCell.swift in Sources */,
@@ -375,6 +382,7 @@
 				49DC7D26235CDAE2008EB171 /* AnnouncementsViewController.swift in Sources */,
 				49A40BF823709A490053BDE6 /* LoginController.swift in Sources */,
 				49DC7D2D235CDAE2008EB171 /* ResourceImageViewController.swift in Sources */,
+				49C866A623734271001F13B4 /* AdminFAQViewController.swift in Sources */,
 				49DC7D25235CDAE2008EB171 /* Announcement.swift in Sources */,
 				49DC7D24235CDAE2008EB171 /* AnnouncementCell.swift in Sources */,
 				49C866A22370B6B4001F13B4 /* AdminAnnouncementsViewController.swift in Sources */,

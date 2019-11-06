@@ -12,7 +12,7 @@
             <objects>
                 <viewController storyboardIdentifier="AnnouncementsViewController" autoresizesArchivedViewToFullSize="NO" title="AnnouncementsViewController" modalPresentationStyle="fullScreen" id="BgK-kc-hQa" userLabel="Announcements" customClass="AnnouncementsViewController" customModule="springFling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aX3-ta-jYw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="mZq-G1-v5G">
@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2T3-Pa-o1G">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" restorationIdentifier="AnnouncementCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnnouncementCell" rowHeight="150" id="EUY-rq-4Y3" customClass="AnnouncementCell" customModule="springFling" customModuleProvider="target">
@@ -79,6 +79,7 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" title="Announcements" largeTitleDisplayMode="always" id="qRH-Gd-K4Q"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="2T3-Pa-o1G" id="Td4-zJ-q2J"/>
@@ -97,6 +98,7 @@
                         <color key="badgeColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                     </tabBarItem>
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Psm-2M-RRm">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -113,12 +115,12 @@
             </objects>
             <point key="canvasLocation" x="-1193" y="159"/>
         </scene>
-        <!--Announcements-->
+        <!--Admin Announcements-->
         <scene sceneID="YKe-p3-T1c">
             <objects>
-                <viewController storyboardIdentifier="AdminAnnouncementsViewController" autoresizesArchivedViewToFullSize="NO" title="AdminAnnouncementsViewController" modalPresentationStyle="fullScreen" id="sve-zN-TaJ" userLabel="Announcements" customClass="AdminAnnouncementsViewController" customModule="springFling" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdminAnnouncementsViewController" autoresizesArchivedViewToFullSize="NO" title="AdminAnnouncementsViewController" modalPresentationStyle="fullScreen" id="sve-zN-TaJ" userLabel="Admin Announcements" customClass="AdminAnnouncementsViewController" customModule="springFling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3CP-42-F6F">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JjT-LQ-U53">
@@ -126,7 +128,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fES-Q1-c2X">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AnnouncementCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnnouncementCell" rowHeight="150" id="kT7-sD-bhh" customClass="AnnouncementCell" customModule="springFling" customModuleProvider="target">
@@ -192,7 +194,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="fES-Q1-c2X" id="yPs-0u-qWp"/>
@@ -263,6 +265,6 @@
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6gK-TZ-RB7"/>
+        <segue reference="nBA-ad-8vj"/>
     </inferredMetricsTieBreakers>
 </document>

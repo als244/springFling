@@ -9,10 +9,25 @@ import UIKit
 
 class QuestionCell: UITableViewCell {
 
+    
+    var questEdit : (() -> Void)? = nil
+    var questDelete : (() -> Void)? = nil
+    
     @IBOutlet weak var questionLabel: UILabel!
     
     
+    @IBAction func tapEdit(_ sender: Any) {
+        if let tapEdit = self.questEdit {
+            tapEdit()
+        }
+    }
     
+    @IBAction func tapDelete(_ sender: Any) {
+        if let tapDelete = self.questDelete {
+            tapDelete()
+        }
+    
+    }
     @IBOutlet weak var carrot: UIImageView!
     func setQuestion(question : String){
         questionLabel.text = question

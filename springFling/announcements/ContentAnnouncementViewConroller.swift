@@ -30,11 +30,7 @@ class ContentAnnouncementViewController: UIViewController {
         dateFormatter.dateFormat = "M/d/yyyy h:mm a"
         
         if announcement != nil {
-           
-            
             ref.child("announcements").child("slots").child(announcement.database_name).setValue(["content": content.text as String, "timestamp":dateFormatter.string(from: announcement.datetime)])
-            
-            
             
         } else{
             

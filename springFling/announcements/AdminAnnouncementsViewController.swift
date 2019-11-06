@@ -15,6 +15,10 @@ class AdminAnnouncementsViewController: UIViewController, UITableViewDataSource,
     @IBOutlet weak var tableView: UITableView!
 
     
+    @IBAction func editTap(_ sender: Any) {
+    }
+    
+    
     @IBAction func tapAdd(_ sender: Any) {
         performSegue(withIdentifier: "toContent", sender: nil)
     

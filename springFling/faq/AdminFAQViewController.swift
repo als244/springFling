@@ -2,19 +2,24 @@
 //  FAQViewController.swift
 //  Yale Spring Fling
 //
-//  Created by Andrew Sheinberg on 10/13/19.
+//  Created by Andrew Sheinberg on 11/6/19.
 //
 
 import UIKit
 import Firebase
 
-class FAQViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class AdminFAQViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
     
     var q_a_items = [Q_A]()
+    var q_a_selected_section : Int? = nil
     
+    @IBAction func toAdd(_ sender: Any) {
+        performSegue(withIdentifier: "toContent", sender: nil)
+    
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -32,6 +37,7 @@ class FAQViewController: UIViewController, UITableViewDataSource, UITableViewDel
         authenticate()
         populate_q_a_arr()
     }
+    
     func populate_q_a_arr() {
         var ref: DatabaseReference!
         ref = Database.database().reference()
@@ -69,6 +75,32 @@ class FAQViewController: UIViewController, UITableViewDataSource, UITableViewDel
             // MIGHT NEED A GUARD HERE
             let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell") as! QuestionCell
             cell.setQuestion(question: q_a_items[indexPath.section].question)
+            
+            
+            cell.questEdit = {
+            
+                self.q_a_selected_section = indexPath.section
+                self.performSegue(withIdentifier: "toContent", sender: nil)
+                self.q_a_selected_section = nil
+                
+            }
+            
+            cell.questDelete = {
+                
+                self.q_a_selected_section = indexPath.section
+                
+                let alert = UIAlertController(title: "Delete Announcement", message: "Are you sure you want to permanently delete the announcement?", preferredStyle: .actionSheet)
+                
+                let DeleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: self.handleDelete)
+                let CancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: self.cancelDelete)
+                
+                alert.addAction(DeleteAction)
+                alert.addAction(CancelAction)
+                
+                self.present(alert, animated: true, completion: nil)
+                
+                         
+            }
                 
             return cell
         } else{
@@ -78,6 +110,29 @@ class FAQViewController: UIViewController, UITableViewDataSource, UITableViewDel
         }
     }
     
+    func handleDelete(alertAction: UIAlertAction!){
+        if let deleteIndex = self.q_a_selected_section{
+
+        tableView.beginUpdates()
+                   
+        let cell = self.q_a_items[deleteIndex]
+                   
+                   var ref: DatabaseReference!
+                   ref = Database.database().reference()
+               ref.child("faq").child("slots").child(cell.database_name).removeValue()
+                   
+        self.q_a_items.remove(at: deleteIndex)
+        tableView.deleteSections([deleteIndex] as IndexSet, with: .left)
+                   
+        self.q_a_selected_section = nil
+                   
+         tableView.endUpdates()
+    }
+}
+    
+    func cancelDelete(alertAction: UIAlertAction!) {
+        self.q_a_selected_section = nil
+    }
     
     // the carrot stuff needs to be more stable...?
     
@@ -105,10 +160,25 @@ class FAQViewController: UIViewController, UITableViewDataSource, UITableViewDel
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let contentVC = segue.destination as? ContentFAQViewController else {return}
+        
+        if self.q_a_selected_section == nil {
+                   contentVC.q_a = nil
+               } else {
+            let q_a = q_a_items[q_a_selected_section!]
+               contentVC.q_a = q_a
+               }
+    }
+        
+        
+        
+        
     func authenticate() {
         
-        if Auth.auth().currentUser != nil {
-            performSegue(withIdentifier: "userToAdminFAQ", sender: nil)
+        if Auth.auth().currentUser == nil {
+            performSegue(withIdentifier: "adminToUserFAQ", sender: nil)
         }
     }
 }
+

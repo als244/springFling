@@ -20,8 +20,8 @@
                         <color key="selectedImageTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                     </tabBar>
                     <connections>
-                        <segue destination="r2R-w5-OQ9" kind="relationship" relationship="viewControllers" id="Mbe-h7-YYR"/>
                         <segue destination="WJH-Fq-dmt" kind="relationship" relationship="viewControllers" id="u6f-K4-AdK"/>
+                        <segue destination="r2R-w5-OQ9" kind="relationship" relationship="viewControllers" id="Mbe-h7-YYR"/>
                         <segue destination="Lyi-xp-jSQ" kind="relationship" relationship="viewControllers" id="Cqc-4X-WzR"/>
                         <segue destination="7T7-Gj-Omb" kind="relationship" relationship="viewControllers" id="qlT-Wj-6Ha"/>
                     </connections>

@@ -124,15 +124,13 @@ class LineupViewController: UIViewController, UITableViewDataSource, UITableView
         let elvis = Artist(firstName: "Elvis", lastName: "Presley", picture: UIImage(named: "elvis"), bio: "The King.", spotifyLink: "https://open.spotify.com/artist/43ZHCT0cAZBISjO8DG9PnE")
  
         
-        let charlie = Artist(firstName: "Charlie", lastName: "Adams", picture: UIImage(named: "charlieAdams"), bio: "Aight folks, yoga time.", spotifyLink: nil)
         
-        let slot1 = LineupSlot(artist: charlie, startTime: "3:30", endTime: "5:30")
-        let slot2 = LineupSlot(artist: elvis, startTime: "6:00", endTime: "8:00")
+        let slot1 = LineupSlot(artist: elvis, startTime: "6:00", endTime: "8:00")
     
-        let slot3 = LineupSlot(artist: kanye, startTime: "8:30", endTime: "10:30")
+        let slot2 = LineupSlot(artist: kanye, startTime: "8:30", endTime: "10:30")
         
         
-        return [slot1, slot2, slot3]
+        return [slot1, slot2]
     
     
     
