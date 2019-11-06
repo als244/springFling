@@ -11,12 +11,14 @@ import UIKit
 class Announcement{
     
     var message: String
+    var database_name: String
     var datetime: Date
     var author: String?
     var picture: UIImage?
     
     
-    init(message: String, datetime: Date, author: String?, picture: UIImage?) {
+    init(database_name: String, message: String, datetime: Date, author: String?, picture: UIImage?) {
+        self.database_name = database_name
         self.message = message
         self.datetime = datetime
         self.author = author

@@ -12,8 +12,6 @@ class FAQViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     @IBOutlet weak var tableView: UITableView!
     
-    var q_a_items_2 = [Q_A(question: "Where do I get a wristband for spring fling", answer: "We will have a booth set up between Branford and Saybrook everyday between 11 am and 4 pm."), Q_A(question: "Can I bring a friend or guest?", answer: "Yes, but we are limited to give out one guest wristband per student"), Q_A(question: "More questions are easy to add, right?", answer: "Super easy.")]
-    
     
     var q_a_items = [Q_A]()
     

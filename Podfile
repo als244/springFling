@@ -10,6 +10,7 @@ target 'springFling' do
   pod 'Firebase/Auth'
   pod 'Firebase/Messaging'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'Firebase/Crash'
   pod 'Firebase/Analytics'
 
