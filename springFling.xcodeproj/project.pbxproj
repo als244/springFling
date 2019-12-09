@@ -42,6 +42,12 @@
 		49DC7D45235CDC63008EB171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D43235CDC63008EB171 /* LaunchScreen.storyboard */; };
 		49DC7D47235CDCA0008EB171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DC7D46235CDCA0008EB171 /* AppDelegate.swift */; };
 		49DC7D48235CDFE6008EB171 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49DC7D1C235CDAE2008EB171 /* GoogleService-Info.plist */; };
+		5E6D0DB3238F69E300BFA65F /* merch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6D0DB2238F69E300BFA65F /* merch.storyboard */; };
+		5E6D0DB5238F738900BFA65F /* merchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D0DB4238F738900BFA65F /* merchViewController.swift */; };
+		5E6D0DBA238F957900BFA65F /* MerchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D0DB9238F957800BFA65F /* MerchCell.swift */; };
+		5E6D0DBC238F959300BFA65F /* MerchSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D0DBB238F959300BFA65F /* MerchSlot.swift */; };
+		5E6D0DBE238F95A800BFA65F /* Clothing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D0DBD238F95A800BFA65F /* Clothing.swift */; };
+		5E6D0DC0238F95D400BFA65F /* clothingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6D0DBF238F95D400BFA65F /* clothingDetailsViewController.swift */; };
 		C01C3DF3C1FBB92AAFA2B6D3 /* Pods_springFling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756BBD1D0AF07A9F5627C8F7 /* Pods_springFling.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +91,12 @@
 		49DC7D43235CDC63008EB171 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49DC7D46235CDCA0008EB171 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49DC7D4D235D29CC008EB171 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E6D0DB2238F69E300BFA65F /* merch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = merch.storyboard; sourceTree = "<group>"; };
+		5E6D0DB4238F738900BFA65F /* merchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchViewController.swift; sourceTree = "<group>"; };
+		5E6D0DB9238F957800BFA65F /* MerchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchCell.swift; sourceTree = "<group>"; };
+		5E6D0DBB238F959300BFA65F /* MerchSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchSlot.swift; sourceTree = "<group>"; };
+		5E6D0DBD238F95A800BFA65F /* Clothing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothing.swift; sourceTree = "<group>"; };
+		5E6D0DBF238F95D400BFA65F /* clothingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clothingDetailsViewController.swift; sourceTree = "<group>"; };
 		756BBD1D0AF07A9F5627C8F7 /* Pods_springFling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_springFling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70889AC7EC7AFB9F96C3A65 /* Pods-springFling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-springFling.debug.xcconfig"; path = "Target Support Files/Pods-springFling/Pods-springFling.debug.xcconfig"; sourceTree = "<group>"; };
 		C5277F9A8954E5BCE526C00A /* Pods-springFling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-springFling.release.xcconfig"; path = "Target Support Files/Pods-springFling/Pods-springFling.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +151,7 @@
 				49DC7D43235CDC63008EB171 /* LaunchScreen.storyboard */,
 				49DC7D08235CDAE2008EB171 /* LaunchViewController.swift */,
 				49DC7D42235CDC63008EB171 /* Main.storyboard */,
+				5E6D0DB1238F68C900BFA65F /* merch */,
 				49DC7D19235CDAE2008EB171 /* home */,
 				49DC7D1D235CDAE2008EB171 /* faq */,
 				49DC7CFD235CDAE1008EB171 /* announcements */,
@@ -237,6 +250,19 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		5E6D0DB1238F68C900BFA65F /* merch */ = {
+			isa = PBXGroup;
+			children = (
+				5E6D0DB4238F738900BFA65F /* merchViewController.swift */,
+				5E6D0DBF238F95D400BFA65F /* clothingDetailsViewController.swift */,
+				5E6D0DB2238F69E300BFA65F /* merch.storyboard */,
+				5E6D0DB9238F957800BFA65F /* MerchCell.swift */,
+				5E6D0DBB238F959300BFA65F /* MerchSlot.swift */,
+				5E6D0DBD238F95A800BFA65F /* Clothing.swift */,
+			);
+			path = merch;
+			sourceTree = "<group>";
+		};
 		E03194F3CE15F6FFEC39EF58 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +338,7 @@
 				49DC7D3A235CDAE2008EB171 /* home.storyboard in Resources */,
 				49A40BFA23709A6E0053BDE6 /* login.storyboard in Resources */,
 				49DC7D44235CDC63008EB171 /* Main.storyboard in Resources */,
+				5E6D0DB3238F69E300BFA65F /* merch.storyboard in Resources */,
 				49DC7D28235CDAE2008EB171 /* Assests.xcassets in Resources */,
 				49DC7D29235CDAE2008EB171 /* Preview Assets.xcassets in Resources */,
 				49DC7D45235CDC63008EB171 /* LaunchScreen.storyboard in Resources */,
@@ -375,8 +402,10 @@
 				49C866A823734A60001F13B4 /* ContentFAQViewController.swift in Sources */,
 				49DC7D30235CDAE2008EB171 /* ResourceCell.swift in Sources */,
 				49DC7D3B235CDAE2008EB171 /* HomeViewController.swift in Sources */,
+				5E6D0DB5238F738900BFA65F /* merchViewController.swift in Sources */,
 				49DC7D3F235CDAE2008EB171 /* AnswerCell.swift in Sources */,
 				49DC7D3E235CDAE2008EB171 /* QuestionCell.swift in Sources */,
+				5E6D0DBA238F957900BFA65F /* MerchCell.swift in Sources */,
 				49DC7D2C235CDAE2008EB171 /* Resource.swift in Sources */,
 				49DC7D33235CDAE2008EB171 /* LineupCell.swift in Sources */,
 				49DC7D26235CDAE2008EB171 /* AnnouncementsViewController.swift in Sources */,
@@ -384,9 +413,12 @@
 				49DC7D2D235CDAE2008EB171 /* ResourceImageViewController.swift in Sources */,
 				49C866A623734271001F13B4 /* AdminFAQViewController.swift in Sources */,
 				49DC7D25235CDAE2008EB171 /* Announcement.swift in Sources */,
+				5E6D0DBC238F959300BFA65F /* MerchSlot.swift in Sources */,
 				49DC7D24235CDAE2008EB171 /* AnnouncementCell.swift in Sources */,
 				49C866A22370B6B4001F13B4 /* AdminAnnouncementsViewController.swift in Sources */,
 				49DC7D34235CDAE2008EB171 /* LineupSlot.swift in Sources */,
+				5E6D0DBE238F95A800BFA65F /* Clothing.swift in Sources */,
+				5E6D0DC0238F95D400BFA65F /* clothingDetailsViewController.swift in Sources */,
 				49DC7D38235CDAE2008EB171 /* DetailsViewController.swift in Sources */,
 				49DC7D41235CDAE2008EB171 /* FAQViewController.swift in Sources */,
 				49DC7D2B235CDAE2008EB171 /* LaunchViewController.swift in Sources */,

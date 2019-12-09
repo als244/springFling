@@ -24,6 +24,7 @@
                         <segue destination="r2R-w5-OQ9" kind="relationship" relationship="viewControllers" id="Mbe-h7-YYR"/>
                         <segue destination="Lyi-xp-jSQ" kind="relationship" relationship="viewControllers" id="Cqc-4X-WzR"/>
                         <segue destination="7T7-Gj-Omb" kind="relationship" relationship="viewControllers" id="qlT-Wj-6Ha"/>
+                        <segue destination="Hh0-t0-vE8" kind="relationship" relationship="viewControllers" id="cRM-OK-8bx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Va3-Sz-Yat" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,9 +132,20 @@
             </objects>
             <point key="canvasLocation" x="-1411" y="-151"/>
         </scene>
+        <!--merch-->
+        <scene sceneID="dlw-t3-iCr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="merch" id="Hh0-t0-vE8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shop" image="bag" catalog="system" id="OxJ-T8-sdq" userLabel="MerchandiseLabel"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCE-Bo-c1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1241" y="-151"/>
+        </scene>
     </scenes>
     <resources>
         <image name="announcements" width="25" height="25"/>
+        <image name="bag" catalog="system" width="64" height="64"/>
         <image name="faq" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
         <image name="lineup" width="25" height="25"/>
