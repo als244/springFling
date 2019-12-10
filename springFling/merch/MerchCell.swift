@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MerchCell: UITableViewCell {
     
@@ -14,11 +15,10 @@ class MerchCell: UITableViewCell {
     @IBOutlet weak var clothingNameLabel: UILabel!
     
     func setMerchSlot(slot : MerchSlot){
-        let clothing = slot.clothing
-        if let pic = clothing.picture{
-            clothingPic.image = pic
+        if let pic = slot.picture{
+            downloadImage(image_ref: pic, imageView: clothingPic)
         }
-        clothingNameLabel.text = clothing.itemName
+        clothingNameLabel.text = slot.itemName
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,5 +29,28 @@ class MerchCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func downloadImage(image_ref: String?, imageView: UIImageView){
+        
+        if let img_ref = image_ref {
+            let storageRef = Storage.storage()
+                                                               
+            let storage = storageRef.reference(forURL: "gs://spring-fling-39c0c.appspot.com")
+                                        
+            // Create a reference to the file you want to download
+            let storageImageRef = storage.child(img_ref)
+            
+            // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+            storageImageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
+            if let error = error {
+                print(error)
+                } else {
+                // Data for image is returned
+                imageView.image = UIImage(data: data!)
+                }
+            }
+        }
     }
 }
