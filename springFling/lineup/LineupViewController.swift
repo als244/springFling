@@ -17,7 +17,7 @@ class LineupViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Lineup"
+        self.title = "Schedule"
         lineupItems = createLineup()
         
         //populateLineup()

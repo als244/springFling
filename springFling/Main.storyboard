@@ -106,7 +106,7 @@
         <scene sceneID="hSI-ev-uHc">
             <objects>
                 <viewControllerPlaceholder storyboardName="lineup" id="Lyi-xp-jSQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lineup" image="lineup" id="swY-gn-Lyv" userLabel="LineupLabel"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="lineup" id="swY-gn-Lyv" userLabel="LineupLabel"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQF-yS-cyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

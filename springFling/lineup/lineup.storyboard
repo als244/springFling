@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S18-g8-Fko" userLabel="Lineup">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S18-g8-Fko" userLabel="Schedule">
                                 <rect key="frame" x="0.0" y="399" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
@@ -102,7 +102,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JPu-JL-2U0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Lineup" id="Z59-Bb-xo1"/>
+                    <navigationItem key="navigationItem" title="Schedule" id="Z59-Bb-xo1"/>
                     <connections>
                         <outlet property="tableView" destination="EHX-iM-HTv" id="XcL-8t-ERY"/>
                     </connections>
@@ -179,7 +179,7 @@
                                 <state key="normal" image="spotifyLogo"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="0.65590218321917804" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.3706009926884471" green="0.80288429335279199" blue="0.39301734555719853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YOb-rH-s7g" firstAttribute="top" secondItem="eiw-Xt-ysu" secondAttribute="bottom" constant="15" id="3Yq-JS-Bog"/>
                             <constraint firstItem="uux-fj-9f5" firstAttribute="leading" secondItem="YOb-rH-s7g" secondAttribute="trailing" constant="24" id="3x0-oc-DM3"/>
