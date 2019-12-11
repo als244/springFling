@@ -12,11 +12,13 @@ class Q_A {
     var question: String
     var answer : String
     var isOpen : Bool
+    var timestamp: Date
     
-    init(database_name: String, question: String, answer: String){
+    init(database_name: String, question: String, answer: String, timestamp: Date){
         self.database_name = database_name
         self.question = question
         self.answer = answer
+        self.timestamp = timestamp
         self.isOpen = false
     }
 }

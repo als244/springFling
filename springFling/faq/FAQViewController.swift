@@ -14,11 +14,15 @@ class FAQViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     
     var q_a_items = [Q_A]()
+    let refreshControl = UIRefreshControl()
+    
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         authenticate()
+        refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        tableView.addSubview(refreshControl)
         tableView.dataSource = self
         tableView.delegate = self
         populate_q_a_arr()
@@ -32,21 +36,33 @@ class FAQViewController: UIViewController, UITableViewDataSource, UITableViewDel
         authenticate()
         populate_q_a_arr()
     }
+    
+   @objc func handleRefresh() {
+         populate_q_a_arr()
+         refreshControl.endRefreshing()
+         
+     }
+    
     func populate_q_a_arr() {
         var ref: DatabaseReference!
         ref = Database.database().reference()
         
         ref.child("faq").child("slots").observeSingleEvent(of: .value, with: { (snapshot) in
             // Get all questions and answers
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "M/d/yyyy h:mm a"
+                       
+            
             var q_a_items : [Q_A] = []
             let value = snapshot.value as? NSDictionary
             for (key, slot) in value! {
                 let q_a_data = slot as? NSDictionary
-                let q_a = Q_A(database_name: key as! String, question: q_a_data?["question"] as! String, answer: q_a_data?["answer"] as! String)
+                let q_a = Q_A(database_name: key as! String, question: q_a_data?["question"] as! String, answer: q_a_data?["answer"] as! String, timestamp: dateFormatter.date(from: q_a_data?["timestamp"] as! String)!)
                 q_a_items.append(q_a)
             }
             
-            self.q_a_items = q_a_items
+            self.q_a_items = q_a_items.sorted(by: { $0.timestamp < $1.timestamp})
             self.tableView.reloadData()
 
         })

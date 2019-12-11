@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class DetailsViewController: UIViewController {
     
@@ -20,7 +21,8 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var artistPic: UIImageView!
     
-    @IBOutlet weak var bioLabel: UILabel!
+    
+    @IBOutlet weak var bioLabel: UITextView!
     
     @IBOutlet weak var spotifyButton: UIButton!
     
@@ -35,13 +37,13 @@ class DetailsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = lineupSlot.artist.firstName + " " + lineupSlot.artist.lastName
+        nameLabel.text = lineupSlot.name
         timeLabel.text = lineupSlot.startTime + " - " + lineupSlot.endTime
         // Do any additional setup after loading the view.
-        if let pic = lineupSlot.artist.picture{
-            artistPic.image = pic
+        if let pic = lineupSlot.picture{
+            downloadImage(image_ref: pic, imageView: artistPic)
         }
-        if let spotify = lineupSlot.artist.spotifyLink{
+        if let spotify = lineupSlot.spotifyLink{
             spotifyLink = spotify
             spotifyButton!.addTarget(self, action: #selector(goToSpotify), for: .touchUpInside)
             stayTunedLabel.isHidden = true
@@ -52,13 +54,33 @@ class DetailsViewController: UIViewController {
             stayTunedLabel.isHidden = false
         }
         // bio is an optional so possible error here
-        bioLabel.text = lineupSlot.artist.bio
+        bioLabel.text = lineupSlot.bio
         
        
     }
     
     
-
+    func downloadImage(image_ref: String?, imageView: UIImageView){
+            
+            if let img_ref = image_ref {
+                let storageRef = Storage.storage()
+                                                                   
+                let storage = storageRef.reference(forURL: "gs://spring-fling-39c0c.appspot.com")
+                                            
+                // Create a reference to the file you want to download
+                let storageImageRef = storage.child(img_ref)
+                
+                // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+                storageImageRef.getData(maxSize: 5 * 1024 * 1024) { data, error in
+                if let error = error {
+                    print(error)
+                    } else {
+                    // Data for image is returned
+                    imageView.image = UIImage(data: data!)
+                    }
+                }
+            }
+    }
     /*
     // MARK: - Navigation
 

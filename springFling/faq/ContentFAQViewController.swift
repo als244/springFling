@@ -31,13 +31,18 @@ class ContentFAQViewController: UIViewController, UIScrollViewDelegate {
         var ref: DatabaseReference!
         ref = Database.database().reference()
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "M/d/yyyy h:mm a"
+               
+        
         if q_a != nil {
-            ref.child("faq").child("slots").child(q_a.database_name).setValue(["question":questionText.text, "answer":answerText.text])
+            ref.child("faq").child("slots").child(q_a.database_name).setValue(["question":questionText.text!, "answer":answerText.text!, "timestamp":dateFormatter.string(from: q_a.timestamp)])
             
         } else{
             guard let key = ref.child("faq").child("slots").childByAutoId().key else { return }
             
-            ref.child("faq").child("slots").child(key).setValue(["question":questionText.text, "answer":answerText.text])
+            let time = dateFormatter.string(from: Date())
+            ref.child("faq").child("slots").child(key).setValue(["question":questionText.text!, "answer": answerText.text!, "timestamp":time])
             
         }
         
