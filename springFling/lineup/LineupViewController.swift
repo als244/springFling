@@ -22,6 +22,10 @@ class LineupViewController: UIViewController, UITableViewDataSource, UITableView
         populateLineup()
         tableView.dataSource = self
         tableView.delegate = self
+        
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        
         // Do any additional setup after loading the view.
     }
     

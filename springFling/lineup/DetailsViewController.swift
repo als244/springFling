@@ -46,12 +46,9 @@ class DetailsViewController: UIViewController {
         if let spotify = lineupSlot.spotifyLink{
             spotifyLink = spotify
             spotifyButton!.addTarget(self, action: #selector(goToSpotify), for: .touchUpInside)
-            stayTunedLabel.isHidden = true
         }
         else{
             spotifyButton.isHidden = true
-            checkOutLabel.isHidden = true
-            stayTunedLabel.isHidden = false
         }
         // bio is an optional so possible error here
         bioLabel.text = lineupSlot.bio
