@@ -52,6 +52,7 @@ class DetailsViewController: UIViewController {
         }
         // bio is an optional so possible error here
         bioLabel.text = lineupSlot.bio
+        bioLabel.isEditable = false
         
        
     }
